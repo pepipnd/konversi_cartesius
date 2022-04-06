@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Konversi suhu celcius</legend>   
+			<label for="suhuc">Masukan Suhu Celcius:</label>
+			<input type="text" id="suhuc" >
+			<button onclick="hitung()">Hitung</button>
+		</fieldset>
+	</form>
+ <script type="text/javascript">
+   function hitung(){
+ 	var c= parseInt (document.getElementById("suhuc").value);
+ 	var k= c + 273.15;
+ 	var f= c * 1.8 + 32;
+ 	var r=  1.8 * (c + 491.67);
+ 	var d= (100-c) * 1.5;
+ 	var n= c * 33/100;
+ 	var re=c * 0.8;
+ 	var ro=c * 21/40 + 7.5;
+
+    document.write("<h1><b>Aplikasi Konversi Suhu</b></h1>");
+    document.write("<p><u><b>celcius ke kelvin</b></u> </p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = c + 273.15</p>");
+ 	document.write("konversi suhu dari c ke k : " + k + "<br>");
+ 	document.write("<p><u><b>celcius ke fahreinheit</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = c * 1.8 + 32</p>");
+ 	document.write("konversi suhu dari c ke f : " + f  + "<br>");
+ 	document.write("<p><u><b>celcius ke rankin</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = 1.8 * (c + 491.67)</p>");
+ 	document.write("konversi suhu dari c ke r : " + r + "<br>");
+ 	document.write("<p><u><b>celcius ke delisle</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = (100-c) * 1.5</p>");
+ 	document.write("konversi suhu dari c ke d : " + d + "<br>");
+ 	document.write("<p><u><b>celcius ke newton</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = c * 33/100</p>");
+ 	document.write("konversi suhu dari c ke n : " + n + "<br>");
+ 	document.write("<p><u><b>celcius ke reamur</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k = c * 0.8</p>");
+ 	document.write("konversi suhu dari c ke re : " + re + "<br>");
+ 	document.write("<p><u><b>celcius ke romer</b></u></p>");
+    document.write("suhu celcius : " + c + "<br>");
+    document.write("<p>k =c * 21/40 + 7.5</p>");
+ 	document.write("konversi suhu dari c ke ro : " +ro + "<br>");
+ }
+ </script>
+</body>
+</html>
