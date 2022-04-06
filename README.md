@@ -1,2 +1,2 @@
 # konversi_celcius
-aplikasi sederhana untuk konversi cartecius hanya menggunakan html tanpa freamwork apapun
+aplikasi sederhana untuk konversi celcius hanya menggunakan html tanpa freamwork apapun
